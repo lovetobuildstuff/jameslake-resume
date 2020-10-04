@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c0d5bb41fbda9d287a5897380ed223a5",
+    "revision": "bd052f85aafd895ef4a507c1d6949ed9",
     "url": "/jameslake-resume/index.html"
   },
   {
-    "revision": "349990841f3daf595053",
-    "url": "/jameslake-resume/static/css/main.7ab0d247.chunk.css"
+    "revision": "690663b8cb23da638b9b",
+    "url": "/jameslake-resume/static/css/main.5fbe2cf9.chunk.css"
   },
   {
     "revision": "78f0d723631adfea1076",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jameslake-resume/static/js/2.64c4bfb6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "349990841f3daf595053",
+    "revision": "690663b8cb23da638b9b",
     "url": "/jameslake-resume/static/js/main.29a314a6.chunk.js"
   },
   {
