@@ -155,7 +155,7 @@ const resumeData = {
 				until: 'September 2015',
 				summary: 'Daily tasks centered around digital ad production and development in both HTML5 and Flash for clients such as AT&T, Georgia Lottery, and Bayer. Other projects included:',
 				summarylist: [
-					'Concepted and created (folded) a series of origami animals that become the animated animals seen today on Voya Financial commercials. <i><u>The bunny prototype is in the picture at the top of the page :-)</u></i>',
+					'Concepted and created (folded) a series of origami animals that become the animated animals seen today on Voya Financial commercials. (The bunny prototype is in the picture at the top of the page :-)',
 					'Construction and deployment of large scale sites for World’s Leading Cruise Lines',
 					'Assisting in the rebranding of BBDO Atlanta',
 					'Designing custom-tailored mobile Apps clients'
@@ -163,7 +163,7 @@ const resumeData = {
 			},
 			{
 				key: 'EW',
-				employer: 'EyeWonder / Sizmek',
+				employer: 'EyeWonder (now Sizmek)',
 				logo: './logo-EW.png',
 				title: 'Lead Interactive Developer',
 				from: 'October 2005',
