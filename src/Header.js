@@ -8,7 +8,9 @@ const Header = (props) => (
 		<div className="contact"><a href={'https://www.' + props.entry.website} target="_blank" rel="noopener noreferrer">{props.entry.website}</a></div>
 
 		<div className="pic"><img src={bunnyPic} alt="bunny" /></div>
-		<div className="summary">{props.entry.summary}</div>
+		<div className="summary">{props.entry.summary}<br/>
+			<span className="post-script">This resume was designed and built using ReactJS.</span>
+		</div>
 	</div>
 );
 /* <a href="mailto:{props.entry.email}">{props.entry.email}</a> */

@@ -77,7 +77,7 @@ body {
 	width: 125%;
 	height:100%;
 	padding-left: 25px;
-	padding-bottom:10px;
+	padding-bottom:0;
 	text-align: left;
 	font-family: 'InterstateLight', Interstate, Arial, Helvetica, Geneva, sans-serif;
 	font-weight: 100;
@@ -91,6 +91,15 @@ body {
 	-ms-grid-row: 3;
 	-ms-grid-row-span: 1;
 	grid-row: 3 / span 1;
+}
+.header .post-script {
+	text-align: left;
+	font-family: 'InterstateLight', Interstate, Arial, Helvetica, Geneva, sans-serif;
+	font-weight: 100;
+	font-size: 1em;
+	font-style: italic;
+	line-height:2.5em;
+	color : #666666;
 }
 .header .pic {
 	-ms-grid-column: 2;
@@ -775,7 +784,7 @@ li {
 		width: 150%;
 		height:100%;
 		padding-left: 0;
-		padding-bottom:0;
+		margin-bottom:-20pt;
 		text-align: left;
 		font-family: 'InterstateRegular', Interstate, Arial, Helvetica, Geneva, sans-serif;
 		font-size: 16pt;
@@ -786,6 +795,14 @@ li {
 		-ms-grid-row: 3;
 		-ms-grid-row-span: 1;
 		grid-row: 3 / span 1;
+	}
+	.header .post-script {
+		text-align: left;
+		font-family: 'InterstateRegular', Interstate, Arial, Helvetica, Geneva, sans-serif;
+		font-size: 18pt;
+		font-style: italic;
+		line-height:36pt;
+		color : #000000;
 	}
 	.header .pic {
 		grid-column: 2 / span 1;
