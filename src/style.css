@@ -719,3 +719,356 @@ li {
 	}
 }
 
+@media print {
+	*, div, p, a, li, ul, span, h1, h2, h3, h4 {
+		-webkit-font-smoothing: antialiased !important;
+		text-rendering: optimizeLegibility !important;
+	}
+	body {
+		width: 100%;
+		max-width:720pt;
+		min-height:auto;
+		margin: 0 auto;
+		padding: 0;
+		background: #FFFFFF;
+		font-family: "InterstateRegular", Arial, Helvetica, Geneva, sans-serif;
+		color: #000000;
+	}
+	ul {
+		break-inside: avoid !important;
+	}
+	.header {
+		width: 100%;
+		max-width:720pt;
+		margin: 0;
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-columns: 50% 50%;
+		grid-template-columns: 50% 50%;
+		-ms-grid-rows: auto auto auto;
+		grid-template-rows: auto auto auto;
+		color: #000000;
+	}
+	.header .me {
+		padding-left: 0;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / span 1;
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / span 1;
+	}
+	.header .contact {
+		padding-left: 0;
+		padding-bottom:3pt;
+		text-align: left;
+		font-family: "InterstateRegular", Interstate, Arial, Helvetica, Geneva, sans-serif;
+		font-size: 14pt;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / span 1;
+		-ms-grid-row: 2;
+		-ms-grid-row-span: 1;
+		grid-row: 2 / span 1;
+	}
+	.header .summary {
+		width: 150%;
+		height:100%;
+		padding-left: 0;
+		padding-bottom:0;
+		text-align: left;
+		font-family: 'InterstateRegular', Interstate, Arial, Helvetica, Geneva, sans-serif;
+		font-size: 16pt;
+		color : #152C45;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / span 1;
+		-ms-grid-row: 3;
+		-ms-grid-row-span: 1;
+		grid-row: 3 / span 1;
+	}
+	.header .pic {
+		grid-column: 2 / span 1;
+		grid-row: 1 / span 3;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+				justify-content: flex-end;
+				align-items: center;
+		padding-right: 0;
+	}
+	.header .pic img {
+		width: 30%;
+		min-width: 120pt;
+		border-radius:500em;
+		height: auto;
+		filter:none;
+	}
+	.header a, .vol-info a {
+		color: #000000;
+	}
+
+	.inner-content {
+		width: 100%;
+		max-width:720pt;
+		height: auto;
+		padding: 0;
+		margin:0;
+		margin-top: 3pt;
+		background: #FFFFFF;
+		z-index: -5;
+		filter:none;
+	}
+	h1 {
+		text-align: left;
+		font-size: 26pt;
+		font-family: "InterstateBoldCompressed", Arial, Helvetica, Geneva, sans-serif;
+		text-transform : uppercase;
+		color : #004166;
+	}
+	h2 {
+		color : #004166;
+		font-size: 22pt;
+		font-family: "InterstateBoldCompressed", Arial, Helvetica, Geneva, sans-serif;
+		text-transform : uppercase;
+		margin: 0 0 0.1em 0;
+	}
+	h3 {
+		font-size: 18pt;
+		font-family: "InterstateBoldCompressed", Arial, Helvetica, Geneva, sans-serif;
+		text-transform : uppercase;
+		text-align: left;
+		color: #BB4300;
+		margin: 0 0 0.1em 0;
+	}
+	ul {
+		margin:3pt auto 3pt 3pt;
+	}
+	li {
+		margin-left: 12pt;
+		list-style-type: square;
+		list-style-image: none;
+		font-family: "InterstateRegular", Interstate, Arial, Helvetica, Geneva, sans-serif;
+		font-size: 13pt;
+	}
+
+
+	#designSkills ul, #developmentSkills ul {
+		-webkit-columns: 3;
+		   -moz-columns: 3;
+				columns: 3;
+	}
+	#platformSkills > ul {
+		-webkit-columns: 2;
+		   -moz-columns: 2;
+				columns: 2;
+	}
+
+	#industrySkills {
+		margin-top:40px;
+		margin-bottom:10px;
+	}
+	#workExperience {
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	#education {
+		margin-top:10px;
+		margin-bottom:10px;
+	} 
+	#volunteer {
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+
+
+	.double-group {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-columns: 50% 50%;
+		grid-template-columns: 50% 50%;
+		-ms-grid-rows: auto;
+		grid-template-rows: auto;
+	}
+
+	.double-group > *:nth-child(1) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+	}
+
+	.double-group > *:nth-child(2) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 2;
+	}
+	.double-group .group:first-child {
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / span 1;
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / span 1;
+	}
+	.double-group .group:last-child {
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / span 1;
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / span 1;
+	}
+
+	.work-info, .edu-info, .vol-info {
+		display: grid;
+		grid-template-columns: 10% 90%;
+		grid-template-rows: auto auto auto auto;
+		margin-bottom:10px;
+	}
+
+	.work-info .logo img, .edu-info .logo img, .vol-info .logo img {
+		max-height:72px;
+		width: auto;
+	}
+
+	.work-info .logo {
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / span 1;
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 3;
+		grid-row: 1 / span 3;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+			-ms-flex-pack: start;
+				justify-content: flex-start;
+		-webkit-box-align: center;
+			-ms-flex-align: center;
+				align-items: center;
+		margin-bottom:10px;
+	}
+
+	.work-info .company {
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / span 1;
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / span 1;
+		font-family: "InterstateBold", Interstate, Arial, Helvetica, Geneva, sans-serif;
+		font-weight: bold;
+		font-size: 16pt;
+		margin:4pt auto 0 0;
+	}
+	.work-info .position {
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / span 1;
+		-ms-grid-row: 2;
+		-ms-grid-row-span: 1;
+		grid-row: 2 / span 1;
+		font-family: "InterstateRegular", Interstate, Arial, Helvetica, Geneva, sans-serif;
+		font-weight: normal;
+		font-size: 16pt;
+		margin:2pt auto 0 0;
+	}
+	.work-info .dates {
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / span 1;
+		-ms-grid-row: 3;
+		-ms-grid-row-span: 1;
+		grid-row: 3 / span 1;
+		font-family: "InterstateRegular", Interstate, Arial, Helvetica, Geneva, sans-serif;
+		font-size: 16pt;
+		margin:2pt auto 0 0;
+	}
+	.work-info .summary {
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
+		grid-column: 1 / span 2;
+		-ms-grid-row: 4;
+		-ms-grid-row-span: 1;
+		grid-row: 4 / span 1;
+		font-family: "InterstateRegular", Interstate, Arial, Helvetica, Geneva, sans-serif;
+		font-size: 14pt;
+	}
+	.work-info .summary ul {
+		list-style-type: square;
+		list-style-image: none;
+		font-family: "InterstateRegular", Interstate, Arial, Helvetica, Geneva, sans-serif;
+		font-size: 14pt;
+	}
+
+	.edu-info .logo, .vol-info .logo {
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 1;
+		grid-column: 1 / span 1;
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 4;
+		grid-row: 1 / span 4;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: start;
+			-ms-flex-pack: start;
+				justify-content: flex-start;
+		-webkit-box-align: center;
+			-ms-flex-align: center;
+				align-items: center;
+	}
+	.edu-info .school, .vol-info .org {
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / span 1;
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		grid-row: 1 / span 1;
+		font-family: "InterstateBold", Interstate, Arial, Helvetica, Geneva, sans-serif;
+		font-weight: bold;
+		font-size: 14pt;
+		margin:2pt auto 0 0;
+	}
+	.edu-info .degree, .vol-info .summary {
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / span 1;
+		-ms-grid-row: 2;
+		-ms-grid-row-span: 1;
+		grid-row: 2 / span 1;
+		font-family: "InterstateRegular", Interstate, Arial, Helvetica, Geneva, sans-serif;
+		font-size: 14pt;
+		margin:2pt auto 0 0;
+	}
+	.edu-info .location, .vol-info .dates {
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / span 1;
+		-ms-grid-row: 3;
+		-ms-grid-row-span: 1;
+		grid-row: 3 / span 1;
+		font-family: "InterstateRegular", Interstate, Arial, Helvetica, Geneva, sans-serif;
+		font-weight: normal;
+		font-size: 14pt;
+		margin:2pt auto 0 0;
+	}
+	.edu-info .dates, .vol-info .site {
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		grid-column: 2 / span 1;
+		-ms-grid-row: 4;
+		-ms-grid-row-span: 1;
+		grid-row: 4 / span 1;
+		font-family: "InterstateRegular", Interstate, Arial, Helvetica, Geneva, sans-serif;
+		font-size: 14pt;
+		margin:2pt auto 0 0;
+	}
+/* 
+img {
+	filter: saturate(0.25) brightness(110%) contrast(125%) !important;
+}
+img.dark {
+	filter: invert(100%) hue-rotate(180deg) brightness(120%) contrast(150%) !important;
+}
+ */
+}
